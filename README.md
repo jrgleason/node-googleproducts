@@ -58,7 +58,7 @@ GETALL
 </pre>
 NEW
 ===
-</pre>
+<pre>
 form(method="POST", action="/product/add")
     label Title
       input(type="text", name="title")
