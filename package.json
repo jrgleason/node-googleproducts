@@ -1,0 +1,33 @@
+{
+  "name": "googleproducts",
+  "version": "0.0.1",
+  "description": "Simple Ecommerce",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "Jackie Gleason",
+    "email": "jackiegleason@gmail.com",
+    "url":  "http://jackiergleason.com"
+  },
+  "homepage": "http://jackiergleason.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrgleason/node-googleproducts"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "main": "./lib/googleproducts.js"
+}
