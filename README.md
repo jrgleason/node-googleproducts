@@ -16,7 +16,7 @@ EXPRESS
 
 ROUTES
 ======
-
+<pre>
 var googleproducts = require('googleproducts').getInterface()
 
 exports.getProducts = function(req, res, next){
@@ -40,12 +40,13 @@ exports.addProduct = function(req, res, next){
 exports.deleteProduct = function(req, res, next){
   googleproducts.deleteProduct(req,res,next)  
 }
-
+</pre>
 JADE
 ====
 
 GETALL
 ======
+<pre>
 - each entry in feed.entry
     h2= entry.title.$t
       form(method="POST",action="/product/get")
@@ -54,9 +55,10 @@ GETALL
       form(method="POST",action="/product/delete")
         input(type="hidden",name="entryId",value="#{entry.sc$id.$t}")
         input(type="submit", value="Delete Item")
-
+</pre>
 NEW
 ===
+</pre>
 form(method="POST", action="/product/add")
     label Title
       input(type="text", name="title")
@@ -77,6 +79,7 @@ form(method="POST", action="/product/add")
     input(type="hidden", name="availability", value="Out Of Stock")
     input(type="hidden", name="condition", value="new")
     input(type="submit", value="Add Product")
+</pre>
 
 MORE TO COME!!!!!!!!!
 
